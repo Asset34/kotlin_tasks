@@ -42,7 +42,7 @@ namespace Task1
         public static async Task<List<SearchResult>?> SearchAsync(string searchString)
         {
             // Make a request
-            string fullRequest = _queryUrlBase + HttpUtility.UrlEncode('"' + searchString+ '"');
+            string fullRequest = _queryUrlBase + HttpUtility.UrlEncode('"' + searchString + '"');
             var jsonString = await _httpClient.GetStringAsync(fullRequest);
 
             // Parse response JSON
