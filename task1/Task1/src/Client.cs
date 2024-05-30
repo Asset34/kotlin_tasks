@@ -24,7 +24,7 @@ namespace Task1
             // Make a search request
             var task = MediaWikiSearcher.SearchAsync(searchString);
             task.Wait();
-            List<MediaWikiSearcher.SearchResult>? searchResults = task.Result;
+            List<SearchResult>? searchResults = task.Result;
 
             // Process response
             if (searchResults is not null)

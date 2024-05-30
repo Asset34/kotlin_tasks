@@ -3,7 +3,6 @@ using System.Text.Json.Serialization;
 
 namespace Task_3
 {
-
     public record ScheduleWeek
     {
         [JsonPropertyName("week")]
